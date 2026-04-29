@@ -27,6 +27,8 @@ function assert(condition, message) {
 
 assert(html.includes('assets/css/styles.css'), 'CSS principal não está vinculado');
 assert(html.includes('assets/js/main.js'), 'JS principal não está vinculado');
+assert(html.includes('rel="icon"'), 'Favicon não está vinculado');
+assert(html.includes('assets/img/favicon.svg'), 'Arquivo de favicon não está referenciado');
 assert(html.includes('class="hero-media"'), 'Hero não possui área de mídia dedicada');
 assert(!html.includes('class="hero-mark"'), 'Hero ainda usa imagem absoluta sobreposta ao conteúdo');
 assert(html.includes('#icon-whatsapp'), 'Ícone do WhatsApp não encontrado');
@@ -59,4 +61,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('Smoke test passou: estrutura, assets, ícones, mapa e CTA principal conferidos.');
+console.log('Smoke test passou: estrutura, favicon, assets, ícones, mapa e CTA principal conferidos.');

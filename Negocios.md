@@ -10,6 +10,8 @@ A primeira dobra deve comunicar a marca e a proposta de cotação sem prejudicar
 
 O botão de WhatsApp no menu deve usar o verde característico do canal e o ícone de WhatsApp, destacando o principal caminho de contato.
 
+O favicon deve seguir a identidade visual azul e dourada da marca JCC Multi Parts.
+
 ## Público e aplicações
 
 O atendimento inicial é voltado para:

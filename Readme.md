@@ -7,7 +7,7 @@ Landing page estática da JCC Multi Parts, focada em cotação de peças para m�
 - `index.html`: marcação semântica da página.
 - `assets/css/styles.css`: identidade visual, layout responsivo e paleta extraída das logos.
 - `assets/js/main.js`: animação leve de entrada e atualização automática do ano no rodapé.
-- `assets/img/`: logos usadas na navegação e no hero.
+- `assets/img/`: logos usadas na navegação, no hero e o favicon SVG.
 - `tests/smoke-test.js`: teste simples sem dependências para validar seções, assets e CTA de WhatsApp.
 
 ## Contato e localização
@@ -15,6 +15,8 @@ Landing page estática da JCC Multi Parts, focada em cotação de peças para m�
 A seção de contato usa ícones SVG internos para WhatsApp, endereço, horário e dados recomendados. Também há um mapa incorporado do Google Maps para o endereço comercial informado.
 
 O botão de WhatsApp no menu usa a cor verde do WhatsApp e o ícone da própria marca para reforçar o canal principal de atendimento.
+
+O favicon fica em `assets/img/favicon.svg` e usa a paleta azul/dourada da marca.
 
 O rodapé exibe o crédito: `Desenvolvido pela Dancode Solutions LTDA.`
 
