@@ -14,6 +14,8 @@ Landing page estática da JCC Multi Parts, focada em cotação de peças para m�
 
 A seção de contato usa ícones SVG internos para WhatsApp, endereço, horário e dados recomendados. Também há um mapa incorporado do Google Maps para o endereço comercial informado.
 
+O botão de WhatsApp no menu usa a cor verde do WhatsApp e o ícone da própria marca para reforçar o canal principal de atendimento.
+
 O rodapé exibe o crédito: `Desenvolvido pela Dancode Solutions LTDA.`
 
 ## Layout do hero

@@ -29,7 +29,8 @@ assert(html.includes('assets/css/styles.css'), 'CSS principal não está vincula
 assert(html.includes('assets/js/main.js'), 'JS principal não está vinculado');
 assert(html.includes('class="hero-media"'), 'Hero não possui área de mídia dedicada');
 assert(!html.includes('class="hero-mark"'), 'Hero ainda usa imagem absoluta sobreposta ao conteúdo');
-assert(html.includes('#icon-message-circle'), 'Ícone de WhatsApp/contato não encontrado');
+assert(html.includes('#icon-whatsapp'), 'Ícone do WhatsApp não encontrado');
+assert(html.includes('button--whatsapp header-cta'), 'Botão do menu não usa a variante verde do WhatsApp');
 assert(html.includes('#icon-map-pin'), 'Ícone de endereço/mapa não encontrado');
 assert(html.includes('class="map-frame"'), 'Mapa incorporado não encontrado');
 assert(html.includes('google.com/maps'), 'Mapa do Google não está configurado');

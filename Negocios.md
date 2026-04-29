@@ -8,6 +8,8 @@ A landing page deve apresentar a JCC Multi Parts como fornecedora de peças para
 
 A primeira dobra deve comunicar a marca e a proposta de cotação sem prejudicar a leitura. Como a logo principal possui fundo claro, ela deve aparecer em uma área visual própria, separada do texto do hero, para evitar sobreposição.
 
+O botão de WhatsApp no menu deve usar o verde característico do canal e o ícone de WhatsApp, destacando o principal caminho de contato.
+
 ## Público e aplicações
 
 O atendimento inicial é voltado para:
