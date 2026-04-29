@@ -39,14 +39,9 @@ As categorias exibidas na landing page são:
 
 O CTA principal leva o cliente ao WhatsApp `55 99923-7449`.
 
-Todos os CTAs de WhatsApp devem abrir com uma mensagem pré-preenchida que agradece o contato, informa que o atendimento será retornado em breve e orienta o cliente a enviar:
+Todos os CTAs de WhatsApp devem abrir com uma mensagem pré-preenchida informando que o cliente encontrou a empresa pelo site, deseja solicitar cotação para peças de máquinas pesadas e aguarda retorno.
 
-- Modelo da máquina
-- Marca da máquina
-- Ano
-- Código da peça, se tiver
-
-A página também pode orientar o envio de dados complementares que ajudem na identificação, como foto da peça ou foto da plaqueta.
+Para agilizar a cotação, a página também orienta o cliente a enviar modelo da máquina e todos os dados disponíveis da peça, como marca, ano, código, foto da peça ou foto da plaqueta.
 
 ## Dados comerciais exibidos
 

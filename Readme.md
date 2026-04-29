@@ -16,7 +16,7 @@ A seção de contato usa ícones SVG internos para WhatsApp, endereço, horário
 
 O botão de WhatsApp no menu usa a cor verde do WhatsApp e o ícone da própria marca para reforçar o canal principal de atendimento.
 
-Todos os CTAs de WhatsApp abrem o número `55 99923-7449` com mensagem pré-preenchida agradecendo o contato, avisando que o atendimento será retornado em breve e pedindo modelo da máquina, marca, ano e código da peça, se tiver.
+Todos os CTAs de WhatsApp abrem o número `55 99923-7449` com mensagem pré-preenchida informando que o visitante veio pelo site e deseja solicitar cotação para peças de máquinas pesadas.
 
 O favicon fica em `assets/img/favicon.svg` e usa a paleta azul/dourada da marca.
 

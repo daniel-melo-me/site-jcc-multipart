@@ -5,20 +5,9 @@ const root = path.resolve(__dirname, '..');
 const indexPath = path.join(root, 'index.html');
 const html = fs.readFileSync(indexPath, 'utf8');
 const whatsappMessage = [
-  'Olá! 👋 Obrigado pelo seu contato.',
+  'Olá! Encontrei vocês pelo site e gostaria de solicitar uma cotação para peças de máquinas pesadas.',
   '',
-  'Em breve retornaremos seu atendimento.',
-  '',
-  'Para agilizar, você já pode nos enviar algumas informações importantes:',
-  '',
-  'Modelo da máquina',
-  'Marca',
-  'Ano',
-  'Código da peça (se tiver)',
-  '',
-  'Assim conseguimos te atender com mais rapidez. 🤝',
-  '',
-  'Agradecemos pela compreensão!',
+  'Poderiam me ajudar? Aguardo retorno, obrigado(a)!',
 ].join('\n');
 const encodedWhatsappMessage = encodeURIComponent(whatsappMessage);
 
