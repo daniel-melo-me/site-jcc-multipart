@@ -12,6 +12,33 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-message-circle" viewBox="0 0 24 24">
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14"></path>
+      <path d="m12 5 7 7-7 7"></path>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 4.9-8 12-8 12S4 14.9 4 10a8 8 0 1 1 16 0Z"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M12 6v6l4 2"></path>
+    </symbol>
+    <symbol id="icon-clipboard-list" viewBox="0 0 24 24">
+      <rect x="8" y="2" width="8" height="4" rx="1"></rect>
+      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+      <path d="M8 12h8"></path>
+      <path d="M8 16h5"></path>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"></path>
+    </symbol>
+  </svg>
+
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header">
@@ -33,7 +60,8 @@
       </nav>
 
       <a class="button button--gold header-cta" href="https://wa.me/55999237449?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pe%C3%A7a%20para%20m%C3%A1quina%20pesada." target="_blank" rel="noopener">
-        WhatsApp <span aria-hidden="true">&rarr;</span>
+        <svg class="icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
+        WhatsApp
       </a>
     </div>
   </header>
@@ -50,10 +78,11 @@
 
           <div class="hero-actions">
             <a class="button button--gold" href="https://wa.me/55999237449?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pe%C3%A7a%20para%20m%C3%A1quina%20pesada.%0A%0AModelo%20da%20m%C3%A1quina%3A%0AMarca%3A%0AAno%3A%0AC%C3%B3digo%20da%20pe%C3%A7a%2C%20se%20tiver%3A" target="_blank" rel="noopener">
-              Solicitar cotação <span aria-hidden="true">&rarr;</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
+              Solicitar cotação
             </a>
             <a class="button button--ghost" href="#maquinas">
-              Ver aplicações
+              Ver aplicações <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
             </a>
           </div>
 
@@ -271,27 +300,61 @@
             Envie o modelo da máquina e todos os dados disponíveis da peça.
           </p>
           <a class="button button--gold" href="https://wa.me/55999237449?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pe%C3%A7a%20para%20m%C3%A1quina%20pesada.%0A%0AModelo%20da%20m%C3%A1quina%3A%0AMarca%3A%0AAno%3A%0AC%C3%B3digo%20da%20pe%C3%A7a%2C%20se%20tiver%3A" target="_blank" rel="noopener">
-            Enviar informações <span aria-hidden="true">&rarr;</span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
+            Enviar informações
           </a>
         </div>
 
         <div class="contact-details reveal">
-          <div>
-            <span>WhatsApp</span>
-            <strong>55 99923-7449</strong>
+          <article class="contact-card">
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <div>
+              <span>WhatsApp</span>
+              <strong>55 99923-7449</strong>
+            </div>
+          </article>
+          <article class="contact-card">
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+            <div>
+              <span>Endereço</span>
+              <strong>Rodovia BR 392, 2781 - Tomazetti, Santa Maria-RS</strong>
+            </div>
+          </article>
+          <article class="contact-card">
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <div>
+              <span>Horário</span>
+              <strong>08:00 às 12:00 e 13:30 às 18:00</strong>
+            </div>
+          </article>
+          <article class="contact-card">
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-clipboard-list"></use></svg>
+            <div>
+              <span>Dados recomendados</span>
+              <strong>Modelo, marca, ano, código, foto da peça ou plaqueta</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="map-panel reveal">
+          <div class="map-info">
+            <p class="overline">Localização</p>
+            <h3>JCC Multi Parts em Santa Maria-RS</h3>
+            <p>Rodovia BR 392, 2781 - Tomazetti, Santa Maria-RS</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Rodovia%20BR%20392%202781%20Tomazetti%20Santa%20Maria%20RS" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+              Abrir rota no Google Maps
+            </a>
           </div>
-          <div>
-            <span>Endereço</span>
-            <strong>Rodovia BR 392, 2781 - Tomazetti, Santa Maria-RS</strong>
-          </div>
-          <div>
-            <span>Horário</span>
-            <strong>08:00 às 12:00 e 13:30 às 18:00</strong>
-          </div>
-          <div>
-            <span>Dados recomendados</span>
-            <strong>Modelo, marca, ano, código, foto da peça ou plaqueta</strong>
-          </div>
+          <iframe
+            class="map-frame"
+            title="Mapa com o endereço da JCC Multi Parts"
+            src="https://www.google.com/maps?q=Rodovia%20BR%20392%2C%202781%20-%20Tomazetti%2C%20Santa%20Maria%20-%20RS&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -301,11 +364,12 @@
     <div class="container footer-inner">
       <span>© <span data-year>2026</span> JCC Multi Parts. Todos os direitos reservados.</span>
       <span>Peças para máquinas pesadas da linha amarela.</span>
+      <span>Desenvolvido pela Dancode Solutions LTDA.</span>
     </div>
   </footer>
 
   <a class="floating-whatsapp" href="https://wa.me/55999237449?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pe%C3%A7a%20para%20m%C3%A1quina%20pesada.%0A%0AModelo%20da%20m%C3%A1quina%3A%0AMarca%3A%0AAno%3A%0AC%C3%B3digo%20da%20pe%C3%A7a%2C%20se%20tiver%3A" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
-    WA
+    <svg class="floating-icon" aria-hidden="true"><use href="#icon-message-circle"></use></svg>
   </a>
 
   <script src="assets/js/main.js"></script>

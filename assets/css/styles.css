@@ -52,6 +52,30 @@ img {
   max-width: 100%;
 }
 
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.icon,
+.contact-icon,
+.floating-icon {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+}
+
 .container {
   width: min(100% - 32px, var(--max-width));
   margin: 0 auto;
@@ -579,12 +603,21 @@ h3 {
   gap: 14px;
 }
 
-.contact-details div {
+.contact-card {
+  display: flex;
+  gap: 15px;
   min-height: 134px;
   padding: 20px;
   border: 1px solid rgba(240, 209, 120, 0.18);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  color: var(--jcc-gold-300);
 }
 
 .contact-details span {
@@ -597,6 +630,51 @@ h3 {
   color: rgba(255, 255, 255, 0.88);
   font-size: 1rem;
   line-height: 1.45;
+}
+
+.map-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.45fr) minmax(0, 1fr);
+  gap: 0;
+  overflow: hidden;
+  margin-top: 54px;
+  border: 1px solid rgba(240, 209, 120, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.map-info {
+  padding: 28px;
+}
+
+.map-info h3 {
+  color: var(--white);
+  font-size: 1.35rem;
+}
+
+.map-info p:not(.overline) {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: var(--jcc-gold-light);
+  font-weight: 900;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+  color: var(--jcc-gold-300);
+}
+
+.map-frame {
+  width: 100%;
+  min-height: 360px;
+  border: 0;
+  background: var(--steel);
 }
 
 .site-footer {
@@ -625,10 +703,13 @@ h3 {
   border-radius: 8px;
   background: var(--green);
   color: var(--white);
-  font-size: 0.9rem;
-  font-weight: 900;
   box-shadow: 0 16px 38px rgba(37, 211, 102, 0.34);
   transition: transform 0.2s ease;
+}
+
+.floating-icon {
+  width: 28px;
+  height: 28px;
 }
 
 .floating-whatsapp:hover,
@@ -718,7 +799,8 @@ h3 {
   .two-column,
   .future-panel,
   .contact-layout,
-  .contact-details {
+  .contact-details,
+  .map-panel {
     grid-template-columns: 1fr;
   }
 
@@ -791,6 +873,14 @@ h3 {
 
   .future-panel {
     padding: 24px;
+  }
+
+  .map-info {
+    padding: 22px;
+  }
+
+  .map-frame {
+    min-height: 300px;
   }
 
   .floating-whatsapp {

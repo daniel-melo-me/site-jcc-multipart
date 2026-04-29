@@ -47,6 +47,11 @@ Para agilizar a cotação, a página orienta o cliente a enviar:
 
 - Endereço: Rodovia BR 392, 2781 - Tomazetti, Santa Maria-RS
 - Horário: 08:00 às 12:00 e 13:30 às 18:00
+- Mapa incorporado para visualização do endereço marcado
+
+## Crédito de desenvolvimento
+
+O rodapé deve exibir o crédito: `Desenvolvido pela Dancode Solutions LTDA.`
 
 ## Evolução prevista
 

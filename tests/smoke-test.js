@@ -29,6 +29,11 @@ assert(html.includes('assets/css/styles.css'), 'CSS principal não está vincula
 assert(html.includes('assets/js/main.js'), 'JS principal não está vinculado');
 assert(html.includes('class="hero-media"'), 'Hero não possui área de mídia dedicada');
 assert(!html.includes('class="hero-mark"'), 'Hero ainda usa imagem absoluta sobreposta ao conteúdo');
+assert(html.includes('#icon-message-circle'), 'Ícone de WhatsApp/contato não encontrado');
+assert(html.includes('#icon-map-pin'), 'Ícone de endereço/mapa não encontrado');
+assert(html.includes('class="map-frame"'), 'Mapa incorporado não encontrado');
+assert(html.includes('google.com/maps'), 'Mapa do Google não está configurado');
+assert(html.includes('Dancode Solutions LTDA'), 'Crédito da Dancode Solutions LTDA não encontrado no rodapé');
 assert(/wa\.me\/55999237449/.test(html), 'Link do WhatsApp principal não encontrado');
 assert(!html.includes('logo-jcc(2).jpeg'), 'HTML ainda referencia logo-jcc(2).jpeg');
 assert(!html.includes('logo-jcc-sem-fundo(2).jpeg'), 'HTML ainda referencia logo-jcc-sem-fundo(2).jpeg');
@@ -53,4 +58,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('Smoke test passou: estrutura, assets e CTA principal conferidos.');
+console.log('Smoke test passou: estrutura, assets, ícones, mapa e CTA principal conferidos.');

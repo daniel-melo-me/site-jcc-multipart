@@ -10,6 +10,12 @@ Landing page estática da JCC Multi Parts, focada em cotação de peças para m�
 - `assets/img/`: logos usadas na navegação e no hero.
 - `tests/smoke-test.js`: teste simples sem dependências para validar seções, assets e CTA de WhatsApp.
 
+## Contato e localização
+
+A seção de contato usa ícones SVG internos para WhatsApp, endereço, horário e dados recomendados. Também há um mapa incorporado do Google Maps para o endereço comercial informado.
+
+O rodapé exibe o crédito: `Desenvolvido pela Dancode Solutions LTDA.`
+
 ## Layout do hero
 
 O hero usa duas áreas no desktop: conteúdo textual à esquerda e logo em um painel próprio à direita. A logo não deve ficar como imagem absoluta sobre o texto, porque o arquivo possui fundo claro e pode se sobrepor ao conteúdo.
@@ -42,4 +48,4 @@ Execute:
 npm test
 ```
 
-O teste confere se as seções principais existem, se os assets referenciados estão disponíveis, se o hero mantém uma área de mídia dedicada e se o CTA principal do WhatsApp permanece configurado.
+O teste confere se as seções principais existem, se os assets referenciados estão disponíveis, se o hero mantém uma área de mídia dedicada, se o mapa/ícones/crédito estão presentes e se o CTA principal do WhatsApp permanece configurado.
