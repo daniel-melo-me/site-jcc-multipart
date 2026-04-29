@@ -186,13 +186,10 @@ img {
 
 .hero {
   position: relative;
-  min-height: clamp(560px, 76svh, 720px);
-  display: flex;
-  align-items: center;
   overflow: hidden;
   isolation: isolate;
   background:
-    linear-gradient(90deg, rgba(24, 36, 48, 0.98) 0%, rgba(24, 36, 48, 0.94) 46%, rgba(24, 36, 48, 0.52) 100%),
+    linear-gradient(135deg, rgba(24, 36, 48, 0.98), rgba(48, 72, 97, 0.9)),
     linear-gradient(135deg, var(--jcc-navy-950), var(--jcc-navy-800));
   color: var(--white);
   border-bottom: 5px solid var(--jcc-gold-600);
@@ -208,23 +205,37 @@ img {
   pointer-events: none;
 }
 
-.hero-mark {
-  position: absolute;
-  right: max(24px, calc((100vw - var(--max-width)) / 2));
-  bottom: 34px;
-  width: min(44vw, 560px);
-  max-height: 78%;
-  object-fit: contain;
-  opacity: 0.9;
-  filter: drop-shadow(0 28px 36px rgba(0, 0, 0, 0.24));
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero-content {
+.hero-layout {
   position: relative;
   z-index: 1;
-  padding: 96px 0 88px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
+  gap: 52px;
+  align-items: center;
+  min-height: clamp(560px, 74svh, 700px);
+  padding: 76px 0 58px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-media {
+  width: 100%;
+  max-width: 480px;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid rgba(240, 209, 120, 0.26);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+}
+
+.hero-logo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
 }
 
 .overline {
@@ -655,9 +666,13 @@ h3 {
     display: none;
   }
 
-  .hero-mark {
-    width: min(52vw, 520px);
-    opacity: 0.42;
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
+    gap: 34px;
+  }
+
+  .hero-media {
+    max-width: 400px;
   }
 }
 
@@ -676,12 +691,15 @@ h3 {
     padding-bottom: 4px;
   }
 
-  .hero {
+  .hero-layout {
+    grid-template-columns: 1fr;
     min-height: auto;
+    padding: 76px 0 68px;
   }
 
-  .hero-content {
-    padding: 76px 0 68px;
+  .hero-media {
+    max-width: 420px;
+    justify-self: start;
   }
 
   h1 {
@@ -742,15 +760,12 @@ h3 {
     font-size: 0.9rem;
   }
 
-  .hero-mark {
-    right: -120px;
-    bottom: 30px;
-    width: 420px;
-    opacity: 0.24;
+  .hero-layout {
+    padding: 58px 0 54px;
   }
 
-  .hero-content {
-    padding: 58px 0 54px;
+  .hero-media {
+    max-width: 300px;
   }
 
   h1 {

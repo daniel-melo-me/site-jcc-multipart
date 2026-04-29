@@ -4,6 +4,10 @@
 
 A landing page deve apresentar a JCC Multi Parts como fornecedora de peças para máquinas pesadas da linha amarela e direcionar o visitante para solicitar cotação pelo WhatsApp.
 
+## Apresentação visual
+
+A primeira dobra deve comunicar a marca e a proposta de cotação sem prejudicar a leitura. Como a logo principal possui fundo claro, ela deve aparecer em uma área visual própria, separada do texto do hero, para evitar sobreposição.
+
 ## Público e aplicações
 
 O atendimento inicial é voltado para:

@@ -27,6 +27,8 @@ function assert(condition, message) {
 
 assert(html.includes('assets/css/styles.css'), 'CSS principal não está vinculado');
 assert(html.includes('assets/js/main.js'), 'JS principal não está vinculado');
+assert(html.includes('class="hero-media"'), 'Hero não possui área de mídia dedicada');
+assert(!html.includes('class="hero-mark"'), 'Hero ainda usa imagem absoluta sobreposta ao conteúdo');
 assert(/wa\.me\/55999237449/.test(html), 'Link do WhatsApp principal não encontrado');
 assert(!html.includes('logo-jcc(2).jpeg'), 'HTML ainda referencia logo-jcc(2).jpeg');
 assert(!html.includes('logo-jcc-sem-fundo(2).jpeg'), 'HTML ainda referencia logo-jcc-sem-fundo(2).jpeg');
